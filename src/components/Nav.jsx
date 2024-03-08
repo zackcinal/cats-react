@@ -1,8 +1,12 @@
-import React from 'react'
+import { NavLink } from "react-router-dom"
 
 function Nav() {
   return (
-    <div>Nav</div>
+    <nav>
+      <NavLink to="/">Home</NavLink>
+      <NavLink to="/cats">Cats</NavLink>
+      <NavLink to="/add-cat">Add New Cat!</NavLink>
+    </nav>
   )
 }
 
